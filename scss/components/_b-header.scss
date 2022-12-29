@@ -1,0 +1,20 @@
+.b-header {
+    background: clr(eggplant);
+    padding: pxToRem(16) 0;
+    .navbar {
+        &__nav {
+            display: flex;
+            gap: pxToRem(20);
+            margin-left: pxToRem(20)
+        }
+
+        &__logo {
+            max-width: pxToRem(200);
+        }
+        &__nav-link {
+            color: clr(white);
+            font-weight: fw(fw-600);
+            font-size: pxToRem(14);
+        }
+    }
+}

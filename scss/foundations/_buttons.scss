@@ -1,0 +1,53 @@
+.btn {
+    font-size: pxToRem(14);
+
+    &--pink-cta {
+        background: clr(pink);
+        color: clr(dark);
+        border-radius: pxToRem(5);
+        border: none;
+        font-weight: fw(fw-600);
+        padding: pxToRem(16) pxToRem(24);
+
+        &:hover {
+            background: clr(lilac);
+        }
+    }
+
+    &--outlined-icon {
+        background: transparent;
+        border: pxToRem(2) solid clr(pink);
+        padding: pxToRem(16) pxToRem(24);
+
+        &:hover {
+            border-color: clr(lilac);
+        }
+
+        i {
+            font-size: pxToRem(20);
+        }
+    }
+
+    &--filled-icon {
+        background: clr(pink);
+        border: none;
+        padding: pxToRem(16) pxToRem(24);
+
+        &:hover {
+            background: clr(lilac);
+        }
+
+        i {
+            font-size: pxToRem(20);
+        }
+    }
+
+    &--link {
+        padding-inline: 0;
+        font-weight: fw(fw-500);
+
+        &:hover {
+            color: clr(eggplant)
+        }
+    }
+}

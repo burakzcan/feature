@@ -1,0 +1,23 @@
+@import "./variables";
+
+// Pixel to rem function.
+// Usage: "pxToRem(32)" -> 2rem
+
+@function pxToRem($pxSize, $base: $base-html-font-size) {
+  @return ($pxSize / $base) * 1rem;
+}
+
+// Function for standard spacings.
+// Usage: "margin-right: sp(4)" -> margin-right: 16px ->  margin-right: 1rem
+
+@function clr($color) {
+  $color: map-get($colors, $color);
+
+  @return $color;
+}
+
+@function fw($fw) {
+  $fw: map-get($font-weights, $fw);
+
+  @return $fw;
+}

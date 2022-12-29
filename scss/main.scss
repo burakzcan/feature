@@ -1,0 +1,10 @@
+@import './foundations/all';
+@import './components/all';
+
+
+body,
+html {
+    background: clr(white);
+    color: clr(dark);
+    font-family: $jakarta;
+}
